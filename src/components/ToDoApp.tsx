@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { TasksList } from './TasksList';
 
 
@@ -19,7 +19,7 @@ const handleDeleteTask = (index: number) => {
   return (
     <div>
         <h1>TODO List</h1>
-        <div>
+        <div className='flex'>
             <input
                 type="text"
                 value={newTask}
